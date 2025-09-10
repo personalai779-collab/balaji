@@ -2,8 +2,8 @@ const CACHE_NAME = 'balajibook-v1';
 const urlsToCache = [
   '/',
   '/manifest.json',
-  '/icons/icon-192x192.png',
-  '/icons/icon-512x512.png',
+  '/icons/icon.png',
+  '/icons/icon.png',
 ];
 
 self.addEventListener('install', (event) => {
