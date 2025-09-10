@@ -206,11 +206,20 @@ export const CreateOrder: React.FC = () => {
                       <p className="text-xs text-muted-foreground">
                         PDF, Excel, or Image files
                       </p>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        className="mt-2"
+                        onClick={() => document.getElementById('fileInput')?.click()}
+                      >
+                        Choose File
+                      </Button>
                       <input
+                        id="fileInput"
                         type="file"
                         accept=".pdf,.xlsx,.xls,.jpg,.jpeg,.png"
                         onChange={handleFileChange}
-                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                        className="hidden"
                       />
                     </div>
                   ) : (
